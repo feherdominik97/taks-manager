@@ -19,4 +19,8 @@ class Task extends Model
         'priority',
         'scheduled_day',
     ];
+
+    protected $casts = [
+        'assignees' => 'array',
+    ];
 }
